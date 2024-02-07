@@ -27,4 +27,5 @@ for _ in range(N):
 if fail:
     print("NO")
 else:
-    print(word in result)
+    for word in result:
+        print(word)
