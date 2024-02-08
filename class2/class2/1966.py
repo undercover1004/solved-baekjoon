@@ -19,5 +19,6 @@ for _ in range(N):
                 sequence.append(result)
                 break
             result += 1
-print(sequence)
+for s in sequence:
+    print(s)
         
