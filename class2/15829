@@ -1,0 +1,12 @@
+r = 31
+M = 1234567891
+
+N = int(input())
+
+words = list(map(str, input()))
+res = 0
+
+for i in range(len(words)):
+    res += (ord(words[i]) - 96) * pow(31, i)
+    res %= M
+print(res)
