@@ -1,6 +1,7 @@
 import sys
+from collections import deque
 N = int(sys.stdin.readline())
-stack = []
+stack = deque()
 for _ in range(N):
     s = sys.stdin.readline().split()
     if s[0] == 'push':
@@ -9,7 +10,7 @@ for _ in range(N):
         if not stack:
             print(-1)
         else:
-            print(stack.pop())
+            print(stack.popleft())
     elif s[0] == 'size':
         print(len(stack))
     elif s[0] == 'front':
