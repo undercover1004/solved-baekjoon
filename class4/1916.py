@@ -15,6 +15,7 @@ distance = [INF] * (N + 1)
 def dijkstra(start, end):
     distance[start] = 0
     pq = []
+    way = []
     heapq.heappush(pq, (0, start))
     while pq:
         cnt, x = heapq.heappop(pq)
